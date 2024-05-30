@@ -46,8 +46,35 @@ console.log("The multiplication is: " + resultado);
 
 // Function of skibidi
 function skibidi(mensaje){
-    console.log("Toilet")
+   console.log("Toilet")
 }
 skibidi();
 
+// Escriba una función con el nombre de esVocal() que tome un carácter , devuelva True si es vocal (no importa si es mayúscula o minúscula), y devuelva False en caso contrario.
+function vocal(char){
+    if(char == "a" || char == "e" || char == "i" || char == "o" || char == "u"){
+        return true;
+    }else if(char == "A" || char == "E" || char == "I" || char == "O" || char == "U"){
+        return true
+    }else{
+        return false
+    }
+}
 
+ resultado = vocal("a");
+ console.log(resultado);
+
+ /*
+    Crea una función llamada generar_caracteres() 
+    que tome como parámetro un número entero (n) y un carácter, retornar el carácter multiplicado por n. Por ejemplo, generar_caracteres(5,x), debería retornar «xxxxx».
+ */
+function caracter(numero, caracter){
+    respuesta = "";
+    for(let i = 0;i<numero;i++){
+        
+        respuesta += caracter
+    }
+    return respuesta;
+}
+respuesta = caracter(10,"x")
+console.log(respuesta)
