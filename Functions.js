@@ -68,13 +68,50 @@ function vocal(char){
     Crea una función llamada generar_caracteres() 
     que tome como parámetro un número entero (n) y un carácter, retornar el carácter multiplicado por n. Por ejemplo, generar_caracteres(5,x), debería retornar «xxxxx».
  */
-function caracter(numero, caracter){
-    respuesta = "";
-    for(let i = 0;i<numero;i++){
-        
-        respuesta += caracter
+function caracter(a, b){
+    respuesta = ""
+    for(let i = 0; i<a;i++){
+       respuesta += b 
     }
-    return respuesta;
+    return respuesta
 }
-respuesta = caracter(10,"x")
-console.log(respuesta)
+a = 1
+b = "x"
+respuesta = caracter(a,b)
+console.log(respuesta);
+
+
+
+// Funcion de divison
+function division(a,b){
+    return a/b
+}
+a = 6
+b = 6
+resultado = division(a,b)
+console.log(resultado)
+
+// Funcion de division y parentesis
+function math(a,b,c){
+    return a/b * c
+}
+a = 6
+b = 2
+let c = 5
+respuesta = math(a,b,c)
+console.log(respuesta);
+
+// Function pyramid
+function pyramid(n) {
+    let result = "";
+    for (let i = 1; i <= n; i++) {
+        let spaces = " ".repeat(n - i);
+        let stars = "*".repeat(2 * i - 1);
+        result += spaces + stars + spaces + "\n";
+    }
+    return result;
+}
+
+let n = 5; // Altura de la pirámide
+let respuesta = pyramid(n);
+console.log(respuesta);
