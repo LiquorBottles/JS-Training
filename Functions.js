@@ -115,3 +115,11 @@ function pyramid(n) {
 let n = 5; // Altura de la pirámide
 let respuesta = pyramid(n);
 console.log(respuesta);
+
+// Invertida
+function inversa(cadena){
+    let invertida = (cadena).toLowerCase().split('').reverse().join('');
+    return invertida
+}
+respuesta =  inversa('Hola mundo')
+console.log(respuesta)
